@@ -151,6 +151,11 @@ li {
 a {
   text-decoration: none;
 }
+.logo {
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2.5rem;
+  font-style: italic;
+}
 header {
   background: url("../img/woman-weightlifting.jpg") center center;
   background-size: cover;
@@ -160,7 +165,6 @@ header {
   width: 100%;
   display: flex;
   flex-direction: column;
-  border: red 1px solid;
 }
 header nav {
   display: flex;
@@ -180,7 +184,6 @@ header div.head_cta {
   margin: 5px;
 }
 main {
-  border: green 1px solid;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -191,7 +194,6 @@ main section {
 }
 main .main-page-div {
   width: 50vw;
-  border: green 1px solid;
 }
 main .main-page-div h3,
 main p,
@@ -227,4 +229,28 @@ main .bottom-content p {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+footer {
+  height: 35vh;
+  background-color: #121551;
+  display: flex;
+}
+footer div {
+  width: 50%;
+}
+footer .copyright {
+  color: white;
+  padding: 50px;
+}
+footer .social-media {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .social-media i {
+  color: white;
+  font-size: 2.25rem;
+  padding: 20px;
+  border: 2px white solid;
+  border-radius: 50%;
 }
