@@ -1,0 +1,230 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 3.5rem;
+  font-family: 'lato-bold', sans-serif;
+}
+h2 {
+  font-size: 2rem;
+  font-family: 'lato-light', sans-serif;
+}
+h3 {
+  font-size: 1.5rem;
+}
+hr {
+  width: 5rem;
+  border: purple 2px solid;
+  text-align: left;
+  margin-left: 20px;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+header {
+  background: url("../img/woman-weightlifting.jpg") center center;
+  background-size: cover;
+  z-index: 1;
+  color: white;
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: red 1px solid;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header div.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+header div.menu li {
+  margin: 5px;
+}
+header div.menu a {
+  color: white;
+}
+header div.head_cta {
+  margin: 5px;
+}
+main {
+  border: green 1px solid;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main section {
+  padding: 5vh;
+  display: flex;
+}
+main .main-page-div {
+  width: 50vw;
+  border: green 1px solid;
+}
+main .main-page-div h3,
+main p,
+main li {
+  padding: 20px;
+  display: flex;
+}
+main div img {
+  width: 60%;
+}
+main .bottom-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+main .bottom-content span h2 {
+  padding: 20px;
+}
+main .bottom-content .bottom-icon {
+  width: 5vw;
+}
+main .bottom-content .bottom-icon .fas {
+  font-size: 2rem;
+  margin: 0 auto;
+  color: white;
+  background-image: linear-gradient(to bottom, #5a3bdb, #75c6ec);
+  padding: 20px;
+  border-radius: 50%;
+}
+main .bottom-content .bottom-text h3,
+main .bottom-content p {
+  width: 22vw;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
