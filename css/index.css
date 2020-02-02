@@ -139,6 +139,9 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+h4 {
+  font-size: 1.15rem;
+}
 hr {
   width: 5rem;
   border: purple 2px solid;
@@ -157,6 +160,10 @@ p {
 }
 button {
   cursor: pointer;
+}
+small {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
 }
 .logo {
   font-family: 'Share Tech Mono', monospace;
@@ -242,7 +249,7 @@ main {
   flex-direction: column;
 }
 main section {
-  padding: 15vh 5vw;
+  padding: 10vh 5vw;
   display: flex;
 }
 main .group:nth-child(2n) {
@@ -257,24 +264,27 @@ main .main-page-div li {
   padding: 20px;
   display: flex;
 }
-main .main-page-div img {
-  width: 60%;
-}
 main .main-page-div .img-right {
   margin-left: 150px;
+}
+main .main-page-div img#start-img {
+  margin-top: -250px;
+}
+main .main-page-div #getapp {
+  height: 80vh;
+  margin-top: -175px;
 }
 main .bottom-content {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 40px;
+  margin-bottom: 40px;
 }
 main .bottom-content li {
   display: flex;
   padding: 20px;
   width: 30%;
-  margin-bottom: 3vh;
 }
-main .bottom-content span h2 {
+main .bottom-content h3 {
   padding: 20px;
 }
 main .bottom-content .bottom-icon .fas {
@@ -284,35 +294,49 @@ main .bottom-content .bottom-icon .fas {
   padding: 20px;
   border-radius: 50%;
 }
-main .bottom-content .bottom-text h3,
-main .bottom-content p {
-  padding: 10px 20px;
+main .bottom-content .bottom-text {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+main .bottom-content .bottom-text h3,
+main .bottom-content .bottom-text h4 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+main .bottom-content .bottom-text h4,
+main .bottom-content .bottom-text p {
+  padding: 0.5rem 1rem;
 }
 footer {
   height: 35vh;
   background-color: #121551;
   display: flex;
+  justify-content: space-between;
 }
 footer div {
-  width: 50%;
+  width: 50vw;
 }
 footer .copyright {
   color: white;
-  padding: 50px;
+  padding: 50px 0 50px 40px;
+}
+footer .copyright p {
+  margin-bottom: 30px;
 }
 footer .social-media {
-  margin-left: 25vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
 }
 footer .social-media i {
-  color: white;
-  font-size: 2.25rem;
-  padding: 20px;
-  border: 2px white solid;
+  color: #ABABBD;
+  font-size: 1.7rem;
+  padding: 15px;
+  border: 3px solid;
   border-radius: 50%;
+  font-weight: 900;
+}
+footer .social-media i:hover {
+  color: white;
 }
