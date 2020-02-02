@@ -1,5 +1,5 @@
 header {
-  background: url("../img/woman-weightlifting.jpg") center center;
+  background: url("../img/woman-weightlifting.jpg");
   z-index: 1;
   color: white;
   top: 0vh;
@@ -8,6 +8,7 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 15vh;
+
   // parallax
   background-attachment: fixed;
   background-position: center;
@@ -17,6 +18,17 @@ header {
   nav {
     display: flex;
     justify-content: space-between;
+    // transparent navbar
+    border: none;
+    box-shadow: none;
+    // transition: background 0.7s ease-out;
+    background: rgba(40,40,40,0.7);
+    // transparent!important;
+    position: fixed;
+    z-index: 1030;
+    top: 0;
+    left: 0;
+    right: 0;
 
   }
 
@@ -36,7 +48,7 @@ header {
 
     .menu_cta {
       padding: 10px 20px;
-      background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+      background: linear-gradient(to right, #5a3bdb, #75c6ec);
       color: #fff;
       border: none;
       border-radius: 20px;
@@ -48,7 +60,7 @@ header {
   }
 
   div.head_pitch {
-    margin: 5rem;
+    margin: 10rem;
 
     h1 {
       margin-bottom: 1rem;
@@ -63,7 +75,7 @@ header {
 
     .head_cta {
       padding: 0px 25px;
-      background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+      background: linear-gradient(to right, #5a3bdb, #75c6ec);
       color: #fff;
       border: none;
       border-radius: 25px;

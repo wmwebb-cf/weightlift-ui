@@ -155,6 +155,9 @@ p {
   font-size: 1rem;
   line-height: 1.25rem;
 }
+button {
+  cursor: pointer;
+}
 .logo {
   font-family: 'Share Tech Mono', monospace;
   font-size: 2.25rem;
@@ -162,7 +165,7 @@ p {
   font-weight: bold;
 }
 header {
-  background: url("../img/woman-weightlifting.jpg") center center;
+  background: url("../img/woman-weightlifting.jpg");
   z-index: 1;
   color: white;
   top: 0vh;
@@ -179,6 +182,14 @@ header {
 header nav {
   display: flex;
   justify-content: space-between;
+  border: none;
+  box-shadow: none;
+  background: rgba(40, 40, 40, 0.7);
+  position: fixed;
+  z-index: 1030;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 header .logo {
   margin: 1.25rem;
@@ -194,7 +205,7 @@ header div.menu a {
 }
 header div.menu .menu_cta {
   padding: 10px 20px;
-  background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+  background: linear-gradient(to right, #5a3bdb, #75c6ec);
   color: #fff;
   border: none;
   border-radius: 20px;
@@ -203,7 +214,7 @@ header div.menu .menu_cta {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 header div.head_pitch {
-  margin: 5rem;
+  margin: 10rem;
 }
 header div.head_pitch h1 {
   margin-bottom: 1rem;
@@ -217,7 +228,7 @@ header div.head_pitch p {
 }
 header div.head_pitch .head_cta {
   padding: 0px 25px;
-  background-image: linear-gradient(to right, #5a3bdb, #75c6ec);
+  background: linear-gradient(to right, #5a3bdb, #75c6ec);
   color: #fff;
   border: none;
   border-radius: 25px;
@@ -269,7 +280,7 @@ main .bottom-content span h2 {
 main .bottom-content .bottom-icon .fas {
   font-size: 2rem;
   color: white;
-  background-image: linear-gradient(to bottom, #5a3bdb, #75c6ec);
+  background: linear-gradient(to bottom, #5a3bdb, #75c6ec);
   padding: 20px;
   border-radius: 50%;
 }
