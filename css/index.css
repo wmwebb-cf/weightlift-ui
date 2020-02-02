@@ -153,6 +153,7 @@ li {
 }
 a {
   text-decoration: none;
+  color: inherit;
 }
 p {
   font-size: 1rem;
@@ -307,6 +308,44 @@ main .bottom-content .bottom-text h4 {
 main .bottom-content .bottom-text h4,
 main .bottom-content .bottom-text p {
   padding: 0.5rem 1rem;
+}
+.contact_header {
+  background: #383838;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  height: 300px;
+}
+.contact_header .contact_headline {
+  margin-bottom: 50px;
+}
+.contact_header a button.contact_cta {
+  background: transparent;
+  border: solid 3px #75c6ec;
+}
+table {
+  margin: 0 auto;
+}
+table .login_input {
+  border: none;
+  border-bottom: 1px solid #000;
+  border-radius: 0px;
+  padding: 10px 0px;
+  width: 100%;
+  font-size: 1rem;
+  color: #7E7E7E;
+}
+table h2,
+table td {
+  padding-bottom: 25px;
+}
+table .login_input:focus {
+  outline: none;
+}
+table textarea {
+  height: 200px;
 }
 footer {
   height: 35vh;
