@@ -187,7 +187,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-header nav {
+header .topnav {
   display: flex;
   justify-content: space-between;
   border: none;
@@ -202,16 +202,20 @@ header nav {
 header .logo {
   margin: 1.25rem;
 }
-header div.menu {
+header .menu {
   display: flex;
   justify-content: flex-end;
   margin: 1.25rem;
 }
-header div.menu a {
+header .menu .fa-bars {
+  font-size: 1rem;
+  margin: 20px 20px 0 0;
+}
+header .menu a {
   color: white;
   margin: auto 1rem;
 }
-header div.menu .menu_cta {
+header .menu .menu_cta {
   padding: 10px 20px;
   background: linear-gradient(to right, #5a3bdb, #75c6ec);
   color: #fff;
@@ -221,20 +225,20 @@ header div.menu .menu_cta {
   line-height: 20px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-header div.head_pitch {
+header .head_pitch {
   margin: 10rem;
 }
-header div.head_pitch h1 {
+header .head_pitch h1 {
   margin-bottom: 1rem;
 }
-header div.head_pitch p {
+header .head_pitch p {
   margin-bottom: 3rem;
   font-size: 1.2rem;
   font-weight: 200;
   line-height: 1.5rem;
   font-family: 'lato-light', sans-serif;
 }
-header div.head_pitch .head_cta {
+header .head_pitch .head_cta {
   padding: 0px 25px;
   background: linear-gradient(to right, #5a3bdb, #75c6ec);
   color: #fff;
@@ -243,6 +247,32 @@ header div.head_pitch .head_cta {
   font-size: 18px;
   line-height: 50px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 500px) {
+  header {
+    line-height: 25px;
+    font-size: 14px;
+  }
+  header .topnav .logo {
+    font-size: 1.5rem;
+  }
+  header .topnav .menu {
+    flex-direction: column;
+  }
+  header .topnav .menu_cta {
+    background: none;
+    padding: 0;
+    color: #75c6ec;
+  }
+  header .head_pitch {
+    margin: 11rem 2rem 5rem;
+  }
+  header .head_pitch h1 {
+    font-size: 1.25rem;
+  }
+  header .head_pitch p {
+    font-size: 0.9rem;
+  }
 }
 main {
   width: 100%;

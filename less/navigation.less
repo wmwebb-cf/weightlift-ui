@@ -15,7 +15,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 
-  nav {
+  .topnav {
     display: flex;
     justify-content: space-between;
     // transparent navbar
@@ -36,10 +36,16 @@ header {
     margin: 1.25rem;
   }
 
-  div.menu {
+  .menu {
     display: flex;
     justify-content: flex-end;
     margin: 1.25rem;
+
+    .fa-bars {
+      // display: none;
+      font-size: 1rem;
+      margin: 20px 20px 0 0;
+    }
 
     a {
       color: white;
@@ -59,7 +65,7 @@ header {
 
   }
 
-  div.head_pitch {
+  .head_pitch {
     margin: 10rem;
 
     h1 {
@@ -85,6 +91,37 @@ header {
     }
   }
 
+  @media(max-width: 500px) {
+    line-height: 25px;
+    font-size: 14px;
 
+    .topnav {
+
+      .logo {
+        font-size: 1.5rem;
+      }
+
+      .menu {
+        flex-direction: column;
+      }
+
+      .menu_cta {
+        background: none;
+        padding: 0;
+        color: #75c6ec;
+      }
+
+    }
+
+    .head_pitch {
+      margin: 11rem 2rem 5rem;
+      h1 {
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+  }
 
 }
