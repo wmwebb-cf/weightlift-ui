@@ -1,10 +1,10 @@
 header {
-  background: url("../img/woman-weightlifting.jpg");
+  background: url("../img/woman-weightlifting-min.jpg");
   z-index: 1;
   color: white;
   top: 0vh;
-  height: 80vh;
-  width: 100%;
+  height: 90vh;
+  width: 98vw;
   display: flex;
   flex-direction: column;
   margin-bottom: 15vh;
@@ -33,13 +33,13 @@ header {
   }
 
   .logo {
-    margin: 1.25rem;
+    padding: 1.25rem;
   }
 
   .menu {
     display: flex;
     justify-content: flex-end;
-    margin: 1.25rem;
+    padding: 0.7rem;
 
     .fa-bars {
       // display: none;
@@ -66,7 +66,10 @@ header {
   }
 
   .head_pitch {
+    padding: 1rem;
+    border-radius: 10px;
     margin: 10rem;
+    background: rgba(40, 40, 40, 0.3);
 
     h1 {
       margin-bottom: 1rem;
@@ -91,18 +94,23 @@ header {
     }
   }
 
-  @media(max-width: 500px) {
-    line-height: 25px;
-    font-size: 14px;
+
+  // =====> MOBILE
+
+
+  @media (max-width: 500px) {
+    line-height: 20px;
+    font-size: 1rem;
 
     .topnav {
+      flex-direction: column;
 
       .logo {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
       }
 
       .menu {
-        flex-direction: column;
+        // flex-direction: column;
       }
 
       .menu_cta {
@@ -122,6 +130,27 @@ header {
         font-size: 0.9rem;
       }
     }
+  }
+
+
+  // =====> TABLET
+
+  @media (min-width: 800px) {
+    .topnav {
+      flex-direction: column;
+      width: 100vw;
+    }
+    .head_pitch {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+  }
+
+  // =====> DESKTOP
+
+  @media (max-width: 1000px) {
+
   }
 
 }
