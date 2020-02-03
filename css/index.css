@@ -306,6 +306,11 @@ main .main-page-div p {
 }
 main .main-page-img {
   width: 40vw;
+  display: flex;
+  justify-content: flex-end;
+}
+main .main-page-img #getapp {
+  margin-top: -8rem;
 }
 main .bottom-content {
   display: flex;
@@ -417,6 +422,7 @@ footer {
   background-color: #121551;
   display: flex;
   justify-content: space-between;
+  width: 100vw;
 }
 footer div {
   width: 50vw;
