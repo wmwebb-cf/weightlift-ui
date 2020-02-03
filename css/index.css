@@ -326,10 +326,10 @@ main .bottom-content h3 {
   padding: 20px;
 }
 main .bottom-content .bottom-icon .fas {
-  font-size: 2rem;
+  font-size: 1.25rem;
   color: white;
   background: linear-gradient(to bottom, #5a3bdb, #75c6ec);
-  padding: 20px;
+  padding: 1rem;
   border-radius: 50%;
 }
 main .bottom-content .bottom-text {
