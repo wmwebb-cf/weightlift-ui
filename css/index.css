@@ -388,6 +388,9 @@ main .bottom-content .bottom-text p {
   padding-top: 100px;
   height: 300px;
 }
+.contact_header .no_pitch {
+  background: none;
+}
 .contact_header .contact_headline {
   margin-bottom: 50px;
 }
@@ -416,6 +419,63 @@ table .login_input:focus {
 }
 table textarea {
   height: 200px;
+}
+table .form_send {
+  cursor: pointer;
+  font-size: 20px!important;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  background: linear-gradient(to right, #5a3bdb, #75c6ec);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.team_header .head_pitch .contact_headline {
+  text-align: center;
+  letter-spacing: 1.25px;
+}
+.company-motto {
+  width: 60vw;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+.company-motto .catchphrase {
+  font-weight: 200;
+  padding-bottom: 2rem;
+}
+.company-motto .dedication-statement {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  text-align: center;
+}
+.team-map {
+  margin: 0 auto;
+  display: flex;
+  padding: 3vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.team-map .team-profile {
+  padding: 3vw;
+  display: flex;
+  width: 40vw;
+}
+.team-map .team-profile img {
+  width: 10vw;
+  border-radius: 50%;
+  opacity: 0.85;
+  margin-right: 1vw;
+}
+.team-map .team-profile p {
+  text-align: center;
+  margin: auto 0;
+}
+.team-map .team-profile p .profile-name {
+  text-transform: uppercase;
+  font-style: italic;
 }
 footer {
   height: 35vh;
