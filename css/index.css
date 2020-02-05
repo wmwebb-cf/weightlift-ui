@@ -456,10 +456,12 @@ table .form_send {
   padding-bottom: 5rem;
 }
 .company-motto .catchphrase {
+  text-align: center;
   font-weight: 200;
   padding-bottom: 2rem;
 }
-.company-motto .dedication-statement {
+.company-motto #dedication-statement {
+  font-style: italic;
   font-size: 1.4rem;
   line-height: 2rem;
   text-align: center;
