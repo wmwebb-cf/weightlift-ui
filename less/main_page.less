@@ -29,6 +29,8 @@ main {
 
   .main-page-img {
     width: 40vw;
+    height: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-end;
     #getapp {
@@ -54,11 +56,7 @@ main {
 
     .bottom-icon {
       .fas {
-        font-size: 1.25rem;
-        color: white;
-        background: linear-gradient(to bottom, #5a3bdb, #75c6ec);
-        padding: 1rem;
-        border-radius: 50%;
+        .main-icon();
       }
     }
 
@@ -85,7 +83,7 @@ main {
   // =====> MOBILE
 
 
-  @media (max-width: 500px) {
+  @media (max-width: @mobile) {
     .group {
       flex-direction: column!important;
 
@@ -119,7 +117,7 @@ main {
 
 
 
-  @media (max-width: 800px) {
+  @media (max-width: @tablet) {
     .group{
       .main-page-div {
 
@@ -145,7 +143,7 @@ main {
 
   // =====> DESKTOP
 
-  @media (max-width: 1000px) {
+  @media (max-width: @desktop) {
 
   }
 }

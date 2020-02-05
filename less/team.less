@@ -12,11 +12,11 @@
     font-weight: 200;
     padding-bottom: 2rem;
   }
+
   .dedication-statement {
     font-size: 1.4rem;
     line-height: 2rem;
     text-align: center;
-
   }
 }
 
@@ -26,26 +26,46 @@
   padding: 3vw;
   flex-wrap: wrap;
   justify-content: space-around;
+  @media (max-width: @mobile) {
+    flex-direction: column;
+  }
 
   .team-profile {
     padding: 3vw;
     display: flex;
-
     width: 40vw;
+    border-bottom: solid 1px #667EE3;
+    border-bottom-width: medium;
+    // padding-bottom: 5vh;
+    margin-bottom: 5vh;
+    @media (max-width: @mobile) {
+      width: 80vw;
+      padding-bottom: 10vh;
+      margin-bottom: 10vh;
+    }
+
     img {
       width: 10vw;
+      @media (max-width: @mobile) {
+        width: 25vw;
+      }
       border-radius: 50%;
-      opacity: .85;
+      opacity: 0.85;
       margin-right: 1vw;
     }
+
     p {
       text-align: center;
       margin: auto 0;
 
-      .profile-name{
+      .profile-name {
         text-transform: uppercase;
         font-style: italic;
       }
     }
   }
+}
+
+.gap {
+  margin-bottom: 20vh;
 }

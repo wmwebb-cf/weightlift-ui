@@ -306,6 +306,8 @@ main .main-page-div p {
 }
 main .main-page-img {
   width: 40vw;
+  height: auto;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-end;
 }
@@ -401,6 +403,12 @@ main .bottom-content .bottom-text p {
 table {
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  table {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 table .login_input {
   border: none;
   border-bottom: 1px solid #000;
@@ -409,6 +417,11 @@ table .login_input {
   width: 100%;
   font-size: 1rem;
   color: #7E7E7E;
+}
+@media (max-width: 500px) {
+  table .login_input {
+    width: 90%;
+  }
 }
 table h2,
 table td {
@@ -458,16 +471,36 @@ table .form_send {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media (max-width: 500px) {
+  .team-map {
+    flex-direction: column;
+  }
+}
 .team-map .team-profile {
   padding: 3vw;
   display: flex;
   width: 40vw;
+  border-bottom: solid 1px #667EE3;
+  border-bottom-width: medium;
+  margin-bottom: 5vh;
+}
+@media (max-width: 500px) {
+  .team-map .team-profile {
+    width: 80vw;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh;
+  }
 }
 .team-map .team-profile img {
   width: 10vw;
   border-radius: 50%;
   opacity: 0.85;
   margin-right: 1vw;
+}
+@media (max-width: 500px) {
+  .team-map .team-profile img {
+    width: 25vw;
+  }
 }
 .team-map .team-profile p {
   text-align: center;
@@ -476,6 +509,9 @@ table .form_send {
 .team-map .team-profile p .profile-name {
   text-transform: uppercase;
   font-style: italic;
+}
+.gap {
+  margin-bottom: 20vh;
 }
 footer {
   height: 35vh;

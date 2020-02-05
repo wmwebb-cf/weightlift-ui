@@ -23,6 +23,10 @@
 
 table {
   margin: 0 auto;
+  @media (max-width: @mobile) {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
 
   .login_input {
       border: none;
@@ -32,6 +36,10 @@ table {
       width: 100%;
       font-size: 1rem;
       color: #7E7E7E;
+      @media (max-width: @mobile) {
+        width: 90%;
+
+      }
     }
     h2, td {
       padding-bottom: 25px;
