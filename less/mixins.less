@@ -1,3 +1,33 @@
+.desktop-background() {
+  background: url("../img/woman-weightlifting-min.jpg");
+  z-index: 1;
+  color: white;
+  height: 90vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15vh;
+
+  // parallax
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.mobile-background() {
+  background: url("../img/woman-weightlifting-min.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
 .large-button() {
   padding: 0px 25px;
   background: linear-gradient(to right, #5a3bdb, #75c6ec);

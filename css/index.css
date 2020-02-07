@@ -197,6 +197,17 @@ header {
   -o-background-size: cover;
   background-size: cover;
 }
+@media (max-width: 800px) {
+  header {
+    background: url("../img/woman-weightlifting-min.jpg");
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+  }
+}
 @media (max-width: 500px) {
   header {
     background: url("../img/woman-weightlifting-min.jpg");
@@ -205,6 +216,7 @@ header {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 100vh;
   }
 }
 header .topnav {
@@ -494,6 +506,7 @@ table .form_send {
 @media (max-width: 500px) {
   .team-stamp {
     width: 35vw;
+    text-align: center;
     margin-bottom: 4vh;
   }
 }
@@ -520,7 +533,7 @@ table .form_send {
   width: 40vw;
   border-bottom: solid 1px #667EE3;
   border-bottom-width: medium;
-  margin-bottom: 5vh;
+  margin: 0 auto 5vh;
 }
 @media (max-width: 800px) {
   .team-map .team-profile {
@@ -566,6 +579,17 @@ table .form_send {
 .team-map .team-profile p .profile-name {
   text-transform: uppercase;
   font-style: italic;
+}
+.team-map .team-profile p .github-link {
+  padding: 10px 20px;
+  background: linear-gradient(to right, #5a3bdb, #75c6ec);
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
 }
 .gap {
   margin-bottom: 20vh;

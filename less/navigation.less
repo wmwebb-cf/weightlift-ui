@@ -1,30 +1,12 @@
 header {
-  background: url("../img/woman-weightlifting-min.jpg");
-  z-index: 1;
-  color: white;
-  // top: 0vh;
-  height: 90vh;
-  width: 100vw;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 15vh;
+  .desktop-background();
 
-  // parallax
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+  @media (max-width: @tablet) {
+    .mobile-background();
+  }
   @media (max-width: @mobile) {
-    background: url("../img/woman-weightlifting-min.jpg");
-    background-position: center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    .mobile-background();
+
   }
 
   .topnav {
@@ -57,9 +39,6 @@ header {
       color: white;
       margin: auto 1rem;
     }
-    // a.menu-item:hover {
-    //   color: red;
-    // }
 
     .menu_cta {
       .small-button();
