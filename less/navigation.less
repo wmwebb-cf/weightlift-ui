@@ -8,15 +8,23 @@ header {
   display: flex;
   flex-direction: column;
   margin-bottom: 15vh;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
 
   // parallax
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  
+  @media (max-width: @mobile) {
+    background: url("../img/woman-weightlifting-min.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
   .topnav {
     display: flex;
@@ -84,7 +92,7 @@ header {
   // =====> MOBILE
 
 
-  @media screen and (max-width: @mobile) {
+  @media (max-width: @mobile) {
     line-height: 38px;
     font-size: 1rem;
 
