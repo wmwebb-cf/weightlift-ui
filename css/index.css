@@ -190,7 +190,7 @@ header {
   flex-direction: column;
   margin-bottom: 15vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -254,9 +254,9 @@ header .head_pitch .head_cta {
   line-height: 50px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
   header {
-    line-height: 20px;
+    line-height: 38px;
     font-size: 1rem;
   }
   header .topnav {
@@ -272,9 +272,6 @@ header .head_pitch .head_cta {
   }
   header .head_pitch {
     margin: 11rem 2rem 5rem;
-  }
-  header .head_pitch h1 {
-    font-size: 1.25rem;
   }
   header .head_pitch p {
     font-size: 0.9rem;
@@ -392,19 +389,19 @@ main .bottom-content .bottom-text p {
 .contact_header {
   background: #383838;
   display: flex;
-  text-align: center;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-  height: 300px;
+  height: 65vh;
 }
 .contact_header .no_pitch {
+  text-align: center;
   background: none;
 }
-.contact_header .contact_headline {
+.contact_header .no_pitch .contact_headline {
   margin-bottom: 50px;
 }
-.contact_header a button.contact_cta {
+.contact_header .no_pitch a button.contact_cta {
   background: transparent;
   border: solid 3px #75c6ec;
 }
@@ -494,6 +491,11 @@ table .form_send {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+@media (max-width: 800px) {
+  .team-map {
+    flex-direction: column;
+  }
+}
 @media (max-width: 500px) {
   .team-map {
     flex-direction: column;
@@ -506,6 +508,13 @@ table .form_send {
   border-bottom: solid 1px #667EE3;
   border-bottom-width: medium;
   margin-bottom: 5vh;
+}
+@media (max-width: 800px) {
+  .team-map .team-profile {
+    width: 80vw;
+    padding-bottom: 10vh;
+    margin-bottom: 10vh;
+  }
 }
 @media (max-width: 500px) {
   .team-map .team-profile {
@@ -520,9 +529,14 @@ table .form_send {
   opacity: 0.85;
   margin-right: 1vw;
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .team-map .team-profile img {
     width: 25vw;
+  }
+}
+@media (max-width: 500px) {
+  .team-map .team-profile img {
+    width: 35vw;
   }
 }
 .team-map .team-profile p {

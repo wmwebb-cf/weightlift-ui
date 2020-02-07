@@ -11,7 +11,7 @@ header {
 
   // parallax
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -81,8 +81,8 @@ header {
   // =====> MOBILE
 
 
-  @media (max-width: @mobile) {
-    line-height: 20px;
+  @media screen and (max-width: @mobile) {
+    line-height: 38px;
     font-size: 1rem;
 
     .topnav {
@@ -107,7 +107,7 @@ header {
     .head_pitch {
       margin: 11rem 2rem 5rem;
       h1 {
-        font-size: 1.25rem;
+        // font-size: 1.25rem;
       }
       p {
         font-size: 0.9rem;
