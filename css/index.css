@@ -518,6 +518,9 @@ table .form_send {
 }
 @media (max-width: 500px) {
   .team-map .team-profile {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 80vw;
     padding-bottom: 10vh;
     margin-bottom: 10vh;
@@ -540,6 +543,7 @@ table .form_send {
   .team-map .team-profile img {
     height: auto;
     width: 35vw;
+    margin-bottom: 5vh;
   }
 }
 .team-map .team-profile p {

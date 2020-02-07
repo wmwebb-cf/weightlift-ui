@@ -53,7 +53,6 @@
     width: 40vw;
     border-bottom: solid 1px #667EE3;
     border-bottom-width: medium;
-    // padding-bottom: 5vh;
     margin-bottom: 5vh;
     @media (max-width: @tablet) {
       width: 80vw;
@@ -61,6 +60,9 @@
       margin-bottom: 10vh;
     }
     @media (max-width: @mobile) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 80vw;
       padding-bottom: 10vh;
       margin-bottom: 10vh;
@@ -76,6 +78,7 @@
       @media (max-width: @mobile) {
         height: auto;
         width: 35vw;
+        margin-bottom: 5vh;
       }
       border-radius: 50%;
       opacity: 0.85;
