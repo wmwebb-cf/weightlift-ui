@@ -201,7 +201,7 @@ header {
   header {
     background: url("../img/woman-weightlifting-min.jpg");
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
