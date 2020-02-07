@@ -200,6 +200,8 @@ header {
 @media (max-width: 500px) {
   header {
     background: url("../img/woman-weightlifting-min.jpg");
+    background-attachment: fixed;
+    background-position: center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
